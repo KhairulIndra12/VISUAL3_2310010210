@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormProduk</class>
+ <widget class="QWidget" name="FormProduk">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>1000</width><height>640</height></rect></property>
+  <property name="windowTitle"><string>Form Produk Hukum</string></property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry"><rect><x>10</x><y>10</y><width>681</width><height>270</height></rect></property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0"><widget class="QLabel" name="lbl_id"><property name="text"><string>id</string></property></widget></item>
+    <item row="0" column="1"><widget class="QLineEdit" name="edit_id"/></item>
+    <item row="1" column="0"><widget class="QLabel" name="lbl_jenis"><property name="text"><string>jenis</string></property></widget></item>
+    <item row="1" column="1"><widget class="QComboBox" name="comboJenis"/></item>
+    <item row="2" column="0"><widget class="QLabel" name="lbl_nomor"><property name="text"><string>nomor</string></property></widget></item>
+    <item row="2" column="1"><widget class="QLineEdit" name="edit_nomor"/></item>
+    <item row="3" column="0"><widget class="QLabel" name="lbl_tahun"><property name="text"><string>tahun</string></property></widget></item>
+    <item row="3" column="1"><widget class="QLineEdit" name="edit_tahun"/></item>
+    <item row="4" column="0"><widget class="QLabel" name="lbl_tentang"><property name="text"><string>tentang</string></property></widget></item>
+    <item row="4" column="1"><widget class="QLineEdit" name="edit_tentang"/></item>
+    <item row="5" column="0"><widget class="QLabel" name="lbl_tgl_tetap"><property name="text"><string>tanggal_penetapan</string></property></widget></item>
+    <item row="5" column="1"><widget class="QLineEdit" name="edit_tgl_tetap"/></item>
+    <item row="6" column="0"><widget class="QLabel" name="lbl_tgl_undang"><property name="text"><string>tanggal_pengundangan</string></property></widget></item>
+    <item row="6" column="1"><widget class="QLineEdit" name="edit_tgl_undang"/></item>
+    <item row="7" column="0"><widget class="QLabel" name="lbl_berkas"><property name="text"><string>berkas</string></property></widget></item>
+    <item row="7" column="1"><widget class="QLineEdit" name="edit_berkas"/></item>
+    <item row="8" column="0"><widget class="QLabel" name="lbl_status"><property name="text"><string>status</string></property></widget></item>
+    <item row="8" column="1"><widget class="QComboBox" name="comboStatus"/></item>
+    <item row="9" column="0"><widget class="QLabel" name="lbl_user"><property name="text"><string>created_by</string></property></widget></item>
+    <item row="9" column="1"><widget class="QComboBox" name="comboUser"/></item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btnSimpan"><property name="geometry"><rect><x>720</x><y>20</y><width>121</width><height>28</height></rect></property><property name="text"><string>Simpan</string></property></widget>
+  <widget class="QPushButton" name="btnUbah"><property name="geometry"><rect><x>720</x><y>55</y><width>121</width><height>28</height></rect></property><property name="text"><string>Ubah</string></property></widget>
+  <widget class="QPushButton" name="btnHapus"><property name="geometry"><rect><x>720</x><y>90</y><width>121</width><height>28</height></rect></property><property name="text"><string>Hapus</string></property></widget>
+  <widget class="QPushButton" name="btnBersih"><property name="geometry"><rect><x>720</x><y>125</y><width>121</width><height>28</height></rect></property><property name="text"><string>Bersih</string></property></widget>
+  <widget class="QLineEdit" name="editCari"><property name="geometry"><rect><x>10</x><y>300</y><width>311</width><height>28</height></rect></property><property name="placeholderText"><string>Cari...</string></property></widget>
+  <widget class="QTableWidget" name="table">
+   <property name="geometry"><rect><x>10</x><y>335</y><width>971</width><height>281</height></rect></property>
+   <property name="columnCount"><number>12</number></property>
+   <property name="rowCount"><number>0</number></property>
+   <column><property name="text"><string>id</string></property></column>
+   <column><property name="text"><string>jenis_kode</string></property></column>
+   <column><property name="text"><string>jenis_nama</string></property></column>
+   <column><property name="text"><string>nomor</string></property></column>
+   <column><property name="text"><string>tahun</string></property></column>
+   <column><property name="text"><string>tentang</string></property></column>
+   <column><property name="text"><string>tanggal_penetapan</string></property></column>
+   <column><property name="text"><string>tanggal_pengundangan</string></property></column>
+   <column><property name="text"><string>berkas</string></property></column>
+   <column><property name="text"><string>status</string></property></column>
+   <column><property name="text"><string>created_by</string></property></column>
+   <column><property name="text"><string>created_name</string></property></column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

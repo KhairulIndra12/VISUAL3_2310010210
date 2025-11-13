@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormInformasi</class>
+ <widget class="QWidget" name="FormInformasi">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>980</width><height>620</height></rect></property>
+  <property name="windowTitle"><string>Form Informasi</string></property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry"><rect><x>10</x><y>10</y><width>621</width><height>260</height></rect></property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0"><widget class="QLabel" name="lbl_id"><property name="text"><string>id</string></property></widget></item>
+    <item row="0" column="1"><widget class="QLineEdit" name="edit_id"/></item>
+    <item row="1" column="0"><widget class="QLabel" name="lbl_judul"><property name="text"><string>judul</string></property></widget></item>
+    <item row="1" column="1"><widget class="QLineEdit" name="edit_judul"/></item>
+    <item row="2" column="0"><widget class="QLabel" name="lbl_isi"><property name="text"><string>isi</string></property></widget></item>
+    <item row="2" column="1"><widget class="QTextEdit" name="edit_isi"/></item>
+    <item row="3" column="0"><widget class="QLabel" name="lbl_berkas"><property name="text"><string>berkas</string></property></widget></item>
+    <item row="3" column="1"><widget class="QLineEdit" name="edit_berkas"/></item>
+    <item row="4" column="0"><widget class="QLabel" name="lbl_tglpub"><property name="text"><string>tanggal_publikasi</string></property></widget></item>
+    <item row="4" column="1"><widget class="QLineEdit" name="edit_tanggal_publikasi"/></item>
+    <item row="5" column="0"><widget class="QLabel" name="lbl_user"><property name="text"><string>created_by</string></property></widget></item>
+    <item row="5" column="1"><widget class="QComboBox" name="comboUser"/></item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btnSimpan"><property name="geometry"><rect><x>660</x><y>20</y><width>121</width><height>28</height></rect></property><property name="text"><string>Simpan</string></property></widget>
+  <widget class="QPushButton" name="btnUbah"><property name="geometry"><rect><x>660</x><y>55</y><width>121</width><height>28</height></rect></property><property name="text"><string>Ubah</string></property></widget>
+  <widget class="QPushButton" name="btnHapus"><property name="geometry"><rect><x>660</x><y>90</y><width>121</width><height>28</height></rect></property><property name="text"><string>Hapus</string></property></widget>
+  <widget class="QPushButton" name="btnBersih"><property name="geometry"><rect><x>660</x><y>125</y><width>121</width><height>28</height></rect></property><property name="text"><string>Bersih</string></property></widget>
+  <widget class="QLineEdit" name="editCari"><property name="geometry"><rect><x>10</x><y>290</y><width>311</width><height>28</height></rect></property><property name="placeholderText"><string>Cari...</string></property></widget>
+  <widget class="QTableWidget" name="table">
+   <property name="geometry"><rect><x>10</x><y>325</y><width>951</width><height>281</height></rect></property>
+   <property name="columnCount"><number>7</number></property>
+   <property name="rowCount"><number>0</number></property>
+   <column><property name="text"><string>id</string></property></column>
+   <column><property name="text"><string>judul</string></property></column>
+   <column><property name="text"><string>isi</string></property></column>
+   <column><property name="text"><string>berkas</string></property></column>
+   <column><property name="text"><string>tanggal_publikasi</string></property></column>
+   <column><property name="text"><string>created_by</string></property></column>
+   <column><property name="text"><string>created_name</string></property></column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
